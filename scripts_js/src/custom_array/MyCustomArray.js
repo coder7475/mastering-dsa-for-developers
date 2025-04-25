@@ -7,6 +7,11 @@ class MYCustomArray {
     this.array = new Array(capacity);
   }
 
+  push(value) {
+    this.array[this.length++] = value;
+  }
+
+
   insert(value, index) {
     if (index < 0 || index > this.length) {
       throw new Error('Index is out of bounds')
