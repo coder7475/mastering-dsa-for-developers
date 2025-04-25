@@ -1,15 +1,22 @@
-import { ImageViewer } from './features/image-viewer/ImageViewer';
+// import { ImageViewer } from './features/image-viewer/ImageViewer';
+// import InfixCalculator from './features/infix_to_postfix/InfixToPostfix';
+// import TagMatcher from './features/tag_matcher/TagMatcher';
+// import UndoRedoDemo from './features/undo_redo/UndoRedoDemo';
 
-const images = [
-	'https://picsum.photos/id/1/200/300',
-	'https://picsum.photos/id/2/200/300',
-	'https://picsum.photos/id/3/200/300',
-	'https://picsum.photos/id/4/200/300',
-	'https://picsum.photos/id/5/200/300',
-	'https://picsum.photos/id/6/200/300',
-	'https://picsum.photos/id/7/200/300',
-	'https://picsum.photos/id/8/200/300',
-];
+import TaskScheduler from './features/task_scheduler/TaskScheduler';
+
+// import UndoRedoDemo from './features/undo_redo/UndoRedoDemo';
+
+// const images = [
+// 	'https://picsum.photos/id/1/200/300',
+// 	'https://picsum.photos/id/2/200/300',
+// 	'https://picsum.photos/id/3/200/300',
+// 	'https://picsum.photos/id/4/200/300',
+// 	'https://picsum.photos/id/5/200/300',
+// 	'https://picsum.photos/id/6/200/300',
+// 	'https://picsum.photos/id/7/200/300',
+// 	'https://picsum.photos/id/8/200/300',
+// ];
 
 function App() {
 	return (
@@ -20,7 +27,11 @@ function App() {
 					Click me
 				</button>
 			</div> */}
-			<ImageViewer images={images} />
+			{/* <ImageViewer images={images} /> */}
+			{/* <UndoRedoDemo /> */}
+			{/* <TagMatcher /> */}
+			{/* <InfixCalculator /> */}
+			<TaskScheduler />
 		</div>
 	);
 }
