@@ -18,8 +18,7 @@ class MYCustomArray {
     }
     // last index
     if (index === this.length) {
-      this.array[index] = value;
-      return;
+      return this.push(value);
     }
 
     for (let i = this.length; i > index; i--) {
