@@ -1,4 +1,4 @@
-const DEFAULT_CAPACITY = 10
+const DEFAULT_CAPACITY = 10;
 
 class MYCustomArray {
   constructor(capacity = DEFAULT_CAPACITY) {
@@ -19,17 +19,18 @@ class MYCustomArray {
 
     for (let i = this.length; i > index; i--) {
       this.array[i] = this.array[i - 1];
+      console.log(`Arr[i]: `)
     }
 
   }
 }
 
-const array = new MYCustomArray();
+const arr = new MYCustomArray();
 
-array.insert(1, 0);
-array.insert(2, 1);
-array.insert(3, 2);
-array.insert(4, 3);
-array.insert(5, 4);
+arr.insert(1, 0);
+arr.insert(2, 1);
+arr.insert(3, 2);
+arr.insert(4, 3);
+arr.insert(5, 4);
 
-console.log(array)
+console.log(arr)
