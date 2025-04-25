@@ -23,3 +23,13 @@ class MYCustomArray {
 
   }
 }
+
+const array = new MYCustomArray();
+
+array.insert(1, 0);
+array.insert(2, 1);
+array.insert(3, 2);
+array.insert(4, 3);
+array.insert(5, 4);
+
+console.log(array)
