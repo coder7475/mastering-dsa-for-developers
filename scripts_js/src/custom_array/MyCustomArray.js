@@ -43,7 +43,14 @@ class MYCustomArray {
 
     const element = this.array[index];
 
+    // Last element - Best case
+    if (index === this.array.length - 1) {
+      this.array[index] = undefined;
+      this.length--;
+      return element;
+    }
 
+    // other cases
     for (let i = index; i < this.length; i++) {
       this.array[i] = this.array[i + 1];
     }
