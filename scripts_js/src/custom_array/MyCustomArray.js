@@ -38,6 +38,21 @@ class MYCustomArray {
     return newArray;
   }
 
+  remove(index) {
+    this.#checkIndex(index);
+
+    const element = this.array[index];
+
+
+    for (let i = index; i < this.length; i++) {
+      this.array[i] = this.array[i + 1];
+    }
+
+    this.length--;
+
+    return element;
+  }
+
   // private function checkIndex
   #checkIndex(index) {
     if (index < 0 || index > this.length) {
