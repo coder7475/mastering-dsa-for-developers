@@ -12,7 +12,7 @@ class MYCustomArray {
   }
 
 
-  insert(value, index) {
+  insert(index, value) {
     if (index < 0 || index > this.length) {
       throw new Error('Index is out of bounds')
     }
@@ -27,14 +27,23 @@ class MYCustomArray {
     }
 
   }
+
+  // Linear Time O(n) - Space Complexity (O(n))
+  copy() {
+    const newArray = new Array(this.capacity);
+
+    for (let i = 0; i < this.length; i++) {
+      newArray[i] = this.array[i];
+    }
+
+    return newArray;
+  }
+
 }
 
 const arr = new MYCustomArray();
 
-arr.insert(1, 0);
-arr.insert(2, 1);
-arr.insert(3, 2);
-arr.insert(4, 3);
-arr.insert(5, 4);
+arr.push(1);
+arr.push(2);
 
 console.log(arr)
