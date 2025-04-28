@@ -13,9 +13,8 @@ class MYCustomArray {
 
 
   insert(index, value) {
-    if (index < 0 || index > this.length) {
-      throw new Error('Index is out of bounds')
-    }
+    this.#checkIndex(index);
+
     // last index
     if (index === this.length) {
       return this.push(value);
@@ -39,6 +38,13 @@ class MYCustomArray {
     return newArray;
   }
 
+  // private function checkIndex
+  #checkIndex(index) {
+    if (index < 0 || index > this.length) {
+      throw new Error('Index is out of bounds');
+    }
+  }
+
 }
 
 const arr = new MYCustomArray();
@@ -47,3 +53,24 @@ arr.push(1);
 arr.push(2);
 
 console.log(arr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
